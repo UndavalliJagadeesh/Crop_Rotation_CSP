@@ -57,5 +57,10 @@ function addTable(){
       li.appendChild(document.createTextNode(element));
       ul.appendChild(li);
     });
+    var p = document.createElement('p');
+    var content = document.createTextNode("You can grow one of the following crops for the next turn");
+    p.appendChild(content);
+    p.className ="content-font";
+    divElement.appendChild(p);
     divElement.appendChild(ul);
 }
