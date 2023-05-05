@@ -150,14 +150,16 @@
             <h3 class="content-font">Fill the below details</h3>
             <label for="currentCropFamily">Current crop Family</label>
             <select name="currentCropFamily" id="currentCropFamily" onchange="calculateSchedule()">
-                <option selected="true" style='display: none'></option><option selected="true" style='display: none'></option>
+                <option selected="true" style='display: none'></option>
                 <option value="potato">Potato</option>
                 <option value="legumes">Legumes</option>
                 <option value="brassicas">Brassicas</option>
                 <option value="roots">Roots</option>
             </select>
             <label for="currentCrop">Current Crop</label>
-            <select name="currentCrop" id="currentCrop"></select>
+            <select name="currentCrop" id="currentCrop">
+                <option selected="true" style='display: none'></option>
+            </select>
 
             <div id="nextCrop"></div>
         </div>
