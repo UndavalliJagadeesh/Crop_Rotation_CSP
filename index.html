@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crop Rotation - CSP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script type="text/javascript" src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Crop Rotation</h1>
+		<nav>
+			<ul>
+				<li><a href="#intro">Home</a></li>
+				<li><a href="#basics">Crop Rotation Basics</a></li>
+				<li><a href="#types">Types</a></li>
+				<li><a href="#resources">Resources</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#calSchedule">Calculate Schedule</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+		<div id="intro">
+			<h2 class="header-font">Welcome<br/> to our<br/>Crop Rotation Awareness Page</h2>
+            
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="static/img/1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <p class="content-font">Learn about the benefits of crop rotation and how to implement it on your farm.</p>
+            </div>
+
+		<div id="basics">
+			<h2 class="header-font" >Crop Rotation Basics</h2>
+			<p class="content-font" style="text-indent: 1rem;">Crop rotation is defined as a “system of growing different kinds of crops in recurrent succession on the same land” (Martin et al., 1976). Rotating different crops year after year adds various economic and environmental benefits. In addition, crop rotation is helpful in long-term soil and farm management. Rotating different crops can break pest cycles and add extra nutrients to the soil. Crop rotations build soil fertility, preserve the environment, control weeds, diseases, and insects, and add to crop and market diversity (Baldwin, 2006). Some examples of crop rotations include: corn-soybean (Glycine max L.)-wheat/red clover (Trifolium pretense L.), corn–soybean, corn–soybean–winter wheat, rice–wheat, and other potential rotations. However, these crop rotations are not universally common, rather they depend on different environmental and soils conditions.</p>
+                <p class="content-font" style="text-indent: 1rem;"> In the Midwest United States, corn–soybean is the dominating biannual crop rotation (Plourde et al., 2013), whereas, in Asia, rice–wheat is the dominating rotation (Mishra and Singh, 2012). The rice–wheat crop rotation occupies about 18 million hectare area in Asia, of which 75% are in the Indo-Gangetic Plains of India (10 million ha), Pakistan (2.2 million ha), Bangladesh (0.8 million ha), and Nepal (0.5 million ha) (Mishra and Singh, 2012). Both rice and wheat crops feed about 20% of the world population (Mishra and Singh, 2012). Soybean and corn summer crops are widely grown in rotation with Italian ryegrass (Lolium multiflorum Lam) in the subtropical South American regions of Brazil, Argentina, Uruguay, and Paraguay (Neto et al., 2014). In Europe, planting of wheat after rapeseed (Brassica oleracea L.), and wheat after small-grain cereals is very common (Peyraud et al., 2014). Small-grain cereals, grain and forage maize, rapeseed, and sunflower (Helianthus annus L.) accounted for 75% of crops preceding wheat in 2001 (Peyraud et al., 2014).
+                The use of long-term diverse rotations helps in improving grain yield as well. Baldwin (2006) documented that the grain producers of the United States believe that the use of 2- and 3-year crop rotations produce higher crop yields compared to those grown as monoculture. In Africa, the sole cropping system, crop rotation, and intercropping of legumes and cereals are the dominant cultural practices, and crop rotation has been indicated as the most superior, followed by monoculture, and lastly the intercropping system. </p>
+                <p class="content-font" style="text-indent: 1rem;">Consequently, rotational cropping involving legumes and cereals were reported to be a more sustainable system for increasing food production in Africa than intercropping (Dakora and Keya, 1997).
+                Mixed cropping systems are favored because they reduce the risk of crop failure caused by unfavorable rainfall patterns as well as pests and disease pressures. There are various benefits to soil health in a diversified cropping system (Sauerborn et al., 2000). Most notably is the improvement of water use efficiency especially in arid and semiarid areas such as West Asia and North Africa. The latter region covers almost about 1.7 billion ha (Kassam, 1981) and is recognized as dryland with a rainfall range of 100–600 mm year−1 (Dennett, 1987). The effectiveness of crop rotation has been studied in another arid area, Saudi Arabia, where rotations of cereals and alfalfa crops managed with center pivot systems showed an improvement in soil hydrological properties and subsequent yield improvement (Al-Rumikhani, 2002). Another long-term study in Syria conducted by Jones and Singh (2000) showed increase in crop yield of a barley-legume rotation compared to continuous barley. A recent study in Egypt showed the ability of crop rotation in decreasing nematode population in the root zone (Ahlam et al., 2015). Therefore, based on the studies conducted across different parts of the world, it has been demonstrated that rotating crops every other year has various economic and environmental benefits.</p>
+        </div>
+
+		<div id="types">
+            <h2 class="header-font" >Crop Rotation Types</h2>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 15rem; height: 30rem;">
+                        <img src="static/img/seq.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text content-font"><b>Sequential cropping</b> involves growing two crops in the same field, one after the other in the same year. In some places the rainy season is long enough to grow two crops: either two main crops or one main crop followed by a cover crop.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 15rem; height: 30rem;">
+                        <img src="static/img/gm.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text content-font"><b>Green manures</b> are crops grown within a rotation for the purposes of: building soil organic matter and soil structure, supplying nitrogen and other nutrients for a following crop, prevents leaching of soluble nutrients from the soil.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 15rem; height: 30rem;">
+                        <img src="static/img/relay.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text content-font"><b>Relay cropping</b> is often practiced in both upland and lowland rice cultivation areas. In this multiple cropping system, crops are planted on different dates and cultivated together for at least part of their life cycle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 15rem; height: 30rem;">
+                        <img src="static/img/com.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text content-font"><b>Green manures</b> are crops grown within a rotation for the purposes of: building soil organic matter and soil structure, supplying nitrogen and other nutrients for a following crop, prevents leaching of soluble nutrients from the soil.</p>
+                        </div>
+                    </div>
+                </div>
+		    </div>
+        </div>
+
+		<div id="resources">
+			<h2 class="header-font" >Resources</h2>
+			<p class="content-font">Find links to helpful resources and organizations that can support your crop rotation efforts.
+                <li>Learn about Crop Rotation (By Govt. of Maharastra) here 👉 <a href="https://cultural.maharashtra.gov.in/english/gazetteer/AMRAVATI/agri_crop%20rotation.html">Click here</a></li>
+                <li>Find more insights on Crop Rotation here 👉 <a href="https://www.sare.org/sare-category/crop-production/cropping-systems/crop-rotation/">Click here</a></li>
+            </p>
+		</div>
+
+        <div id="gallery">
+            <h2 class="header-font">Gallery</h2>
+            <div class="image-grid">
+                <div class="image01"></div>
+                <div class="image02"></div>
+                <div class="image03"></div>
+                <div class="image04"></div>
+                <div class="image05"></div>
+                <div class="image06"></div>
+                <div class="image07"></div>
+                <div class="image08"></div>
+                <div class="image09"></div>
+                <div class="image10"></div>
+                <div class="image11"></div>
+                <div class="image12"></div>
+            </div>
+        </div>
+
+        <div id="calSchedule">
+            <h2 class="header-font">Find Next Crop</h2><br/>
+            <h3 class="content-font">Fill the below details</h3>
+            <label for="currentCropFamily">Current crop Family</label>
+            <select name="currentCropFamily" id="currentCropFamily" onchange="calculateSchedule()">
+                <option selected="true" style='display: none'></option><option selected="true" style='display: none'></option>
+                <option value="potato">Potato</option>
+                <option value="legumes">Legumes</option>
+                <option value="brassicas">Brassicas</option>
+                <option value="roots">Roots</option>
+            </select>
+            <label for="currentCrop">Current Crop</label>
+            <select name="currentCrop" id="currentCrop"></select>
+
+            <div id="nextCrop"></div>
+        </div>
+
+        <div id="aboutus">
+            <h2 class="header-font">About Us</h2>
+            <p class="content-font">We, the students of Computer Science and Engineering of Vishnu Institute of Technology, Bhimavarm  had the opportunity to interact with the farmers of Pennada village as part of our Community Service Project. We were welcomed with open arms by the farmers who were very humble. We interacted with few farmers and discussed about their crop rotation practices.</p>
+        </div>
+        
+        
+	<footer>
+		<p class="content-font">&copy; 2023 Website developed as a part of Community Service Project</p>
+	</footer>
+</body>
+</html>

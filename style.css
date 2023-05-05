@@ -1,0 +1,164 @@
+/* Reset styles */
+html, body, header, footer {
+	margin: 0;
+	padding: 0;
+}
+
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #fff;
+}
+
+a {
+	color: #008080;
+}
+
+a:hover {
+	color: #123C69;
+}
+
+/* Header styles */
+header {
+	background-color: #AC3B61;
+	padding: 20px;
+}
+
+h1 {
+	color: #fff;
+	margin: 0;
+	font-size: 36px;
+}
+
+nav {
+	margin-top: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: #f2f2f2;
+}
+
+
+
+section p {
+	margin-bottom: 20px;
+}
+
+#intro{
+    background-color: #fff;
+}
+
+.header-font{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.content-font{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+div{
+    padding: 3%;
+}
+
+#basics{
+    background-color: #EDC7B7;
+}
+
+h2{
+    font-size: 4rem;
+    padding: 1rem;
+}
+#types{
+    background-color: #9AA4EC;
+}
+
+.row{
+    justify-items: center;
+}
+
+#resources{
+    background-color: #f4a4a4;
+}
+
+#gallery{
+    /* background-color: #E2F0F9; */
+    background-color: #fff;
+}
+
+#calSchedule{
+    /* background-color: #BADFE7; */
+    background-color: #EDF6FF;
+}
+
+#aboutus{
+    background-color: #38acf0;
+}
+
+/* Footer styles */
+footer {
+	background-color: #0b1988;
+	padding: 20px;
+	color: #f2f2f2;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* Image grid */
+
+.image-grid div {
+  width: 25%;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image01 { background-image: url('static/img/20230428_112909amByGPSMapCamera.jpg'); }
+.image02 { background-image: url('static/img/20230428_113101amByGPSMapCamera.jpg'); }
+.image03 { background-image: url('static/img/20230428_120112pmByGPSMapCamera.jpg'); }
+.image04 { background-image: url('static/img/20230428_113140amByGPSMapCamera.jpg'); }
+.image05 { background-image: url('static/img/20230428_113222amByGPSMapCamera.jpg'); }
+.image06 { background-image: url('static/img/20230428_115144AMByGPSMapCamera.jpg'); }
+.image07 { background-image: url('static/img/20230428_113339amByGPSMapCamera.jpg'); }
+.image08 { background-image: url('static/img/20230428_113719amByGPSMapCamera.jpg'); }
+.image09 { background-image: url('static/img/20230428_115931amByGPSMapCamera.jpg'); }
+.image10 { background-image: url('static/img/20230428_113456amByGPSMapCamera.jpg'); }
+.image11 { background-image: url('static/img/20230428_120122pmByGPSMapCamera.jpg'); }
+.image12 { background-image: url('static/img/IMG_20230428_114018351.jpg'); }
+
+
+@media screen and (max-width: 400px) {
+  .image-grid {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+  .image-grid div { width: 100%; }
+}
