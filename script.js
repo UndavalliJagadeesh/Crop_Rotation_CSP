@@ -1,5 +1,5 @@
 // Example function to calculate crop rotation schedule
-
+var cropList=[]
 function calculateSchedule() {
   
   var cropGroup = document.getElementById('currentCropFamily').value;
@@ -36,36 +36,28 @@ function calculateSchedule() {
    for(i = L; i >= 0; i--) {
       optionList.remove(i);
    }
+   var option = document.createElement("option");
+   option.style.display="none";
+   document.getElementById('currentCrop').options.add(option);
   options.forEach(option =>
     optionList.add(
       new Option(option, option, true)
       )
   );
-
-  nextCrop(nextcrop);
+  cropList = nextcrop;
+  addTable();
 }
 
-function nextCrop(lst){
-  var divElement = document.getElementById('nextCrop');
-  var tbl = document.createElement('table');
-  tbl.style.width = '100%';
-  tbl.setAttribute('border', '1');
-  var tbdy = document.createElement('tbody');
-  for (var i = 0; i < 3; i++) {
-    var tr = document.createElement('tr');
-    for (var j = 0; j < 2; j++) {
-      if (i == 2 && j == 1) {
-        break
-      } else {
-        var td = document.createElement('td');
-        td.appendChild(document.createTextNode('\u0020'))
-        i == 1 && j == 1 ? td.setAttribute('rowSpan', '2') : null;
-        tr.appendChild(td)
-      }
-    }
-    tbdy.appendChild(tr);
+function addTable(){
+  if(document.getElementById('currentCrop').value!=''){
+    var divElement = document.getElementById('nextCrop');
+    divElement.innerHTML ='';
+    var ul = document.createElement("ul");
+    cropList.forEach(element => {
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(element));
+      ul.appendChild(li);
+    });
+    divElement.appendChild(ul);
   }
-  tbl.appendChild(tbdy);
-  divElement.appendChild(tbl)
-
 }
