@@ -49,7 +49,6 @@ function calculateSchedule() {
 }
 
 function addTable(){
-  if(document.getElementById('currentCrop').value!=''){
     var divElement = document.getElementById('nextCrop');
     divElement.innerHTML ='';
     var ul = document.createElement("ul");
@@ -59,5 +58,4 @@ function addTable(){
       ul.appendChild(li);
     });
     divElement.appendChild(ul);
-  }
 }
