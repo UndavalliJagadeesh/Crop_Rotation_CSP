@@ -12,7 +12,15 @@ body {
 	color: #333;
 	background-color: #fff;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
+.sticky + .content {
+  padding-top: 102px;
+}
 a {
 	color: #008080;
 }
